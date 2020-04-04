@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/bliss_violet.mk
+    $(LOCAL_DIR)/du_violet.mk
 
 COMMON_LUNCH_CHOICES := \
-    bliss_violet-userdebug \
-    bliss_violet-eng \
-    bliss_violet-user
+    du_violet-userdebug \
+    du_violet-eng \
+    du_violet-user
