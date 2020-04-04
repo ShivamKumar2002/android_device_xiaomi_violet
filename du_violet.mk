@@ -22,7 +22,7 @@ TARGET_INCREMENTAL_BLOCK_BASED := true
 TARGET_SUPPORTS_GOOGLE_RECORDER := true
 $(call inherit-product, vendor/du/config/common_full_phone.mk)
 IS_PHONE:= true
-
+DU_BUILD_TYPE := OFFICIAL
 # Inherit PixelGApps
 $(call inherit-product-if-exists, vendor/gapps/config.mk)
 
