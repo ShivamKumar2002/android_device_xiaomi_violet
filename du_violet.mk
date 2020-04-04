@@ -27,7 +27,7 @@ IS_PHONE:= true
 $(call inherit-product-if-exists, vendor/gapps/config.mk)
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := corvus_violet
+PRODUCT_NAME := du_violet
 PRODUCT_DEVICE := violet
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi Note 7 Pro
