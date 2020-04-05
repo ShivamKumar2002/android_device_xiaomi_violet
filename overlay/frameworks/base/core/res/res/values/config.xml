@@ -559,9 +559,6 @@
     <!-- Screen off delay -->
     <integer name="config_screen_off_delay">0</integer>
 
-    <!-- Whether the always on display mode is available. -->
-    <bool name="config_dozeAlwaysOnDisplayAvailable">true</bool>
-
     <!-- Whether device ignores the RSSNR signal implementation-->
     <bool name="config_ignoreRssnrSignalLevel">true</bool>
 
