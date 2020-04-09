@@ -20,7 +20,7 @@ TARGET_INCLUDE_WIFI_EXT := true
 TARGET_INCLUDE_STOCK_ARCORE := true
 TARGET_INCREMENTAL_BLOCK_BASED := true
 TARGET_SUPPORTS_GOOGLE_RECORDER := true
-$(call inherit-product, vendor/revengeos/config/common_full_phone.mk)
+$(call inherit-product, vendor/revengeos/config/common.mk)
 IS_PHONE:= true
 
 # PixelGApps
