@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/du_violet.mk
+    $(LOCAL_DIR)/revengeos_violet.mk
 
 COMMON_LUNCH_CHOICES := \
-    du_violet-userdebug \
-    du_violet-eng \
-    du_violet-user
+    revengeos_violet-userdebug \
+    revengeos_violet-eng \
+    revengeos_violet-user
