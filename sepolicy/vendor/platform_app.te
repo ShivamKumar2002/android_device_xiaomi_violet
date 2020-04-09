@@ -8,6 +8,5 @@ allow platform_app sysfs_battery_supply:file { getattr open read };
 allow platform_app sysfs_kgsl:file { getattr open read };
 allow platform_app radio_data_file:dir getattr; 
 allow platform_app camera_prop:file {open read getattr};
-allow platform_app sysfs_fps:file { getattr open read };
-allow platform_app sysfs:file { getattr open read };
+allow platform_app sysfs_fpsinfo:file { getattr open read };
 r_dir_file(platform_app, sysfs_kgsl)
