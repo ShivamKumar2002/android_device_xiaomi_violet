@@ -183,10 +183,43 @@ on boot
     chown system system /proc/tp_gesture
     chmod 0660 /proc/tp_gesture
 
-# access permissions for FPC service
-   chown system system /sys/bus/platform/devices/soc/soc:fpc1020/irq
-   chown system system /sys/bus/platform/devices/soc/soc:fpc1020/wakeup_enable
-   chmod 0666 /dev/qseecom
+    # Vibration
+    chown system system /sys/devices/virtual/timed_output/vibrator/vtg_level
+    chmod 0660 /sys/devices/virtual/timed_output/vibrator/vtg_level
+
+    # KCal
+    chown system system /sys/module/msm_drm/parameters/kcal_cont
+    chown system system /sys/module/msm_drm/parameters/kcal_enable
+    chown system system /sys/module/msm_drm/parameters/kcal_hue
+    chown system system /sys/module/msm_drm/parameters/kcal_sat
+    chown system system /sys/module/msm_drm/parameters/kcal_val
+    chown system system /sys/module/msm_drm/parameters/kcal_min
+    chown system system /sys/module/msm_drm/parameters/kcal
+    chown system system /sys/module/msm_drm/parameters/kcal_red
+    chown system system /sys/module/msm_drm/parameters/kcal_green
+    chown system system /sys/module/msm_drm/parameters/kcal_blue
+    chmod 660 /sys/module/msm_drm/parameters/kcal_cont
+    chmod 660 /sys/module/msm_drm/parameters/kcal_enable
+    chmod 660 /sys/module/msm_drm/parameters/kcal_hue
+    chmod 660 /sys/module/msm_drm/parameters/kcal_sat
+    chmod 660 /sys/module/msm_drm/parameters/kcal_val
+    chmod 660 /sys/module/msm_drm/parameters/kcal_min
+    chmod 660 /sys/module/msm_drm/parameters/kcal
+    chmod 660 /sys/module/msm_drm/parameters/kcal_red
+    chmod 660 /sys/module/msm_drm/parameters/kcal_blue
+    chmod 660 /sys/module/msm_drm/parameters/kcal_green
+
+    # Audio gain permissions
+    chown system system /sys/kernel/sound_control/headphone_gain
+    chown system system /sys/kernel/sound_control/mic_gain
+    chmod 0660 /sys/kernel/sound_control/headphone_gain
+    chmod 0660 /sys/kernel/sound_control/mic_gain
+
+    # Torch
+    chmod 0660 /sys/class/leds/led:torch_0/max_brightness
+    chmod 0660 /sys/class/leds/led:torch_1/max_brightness
+    chown system system /sys/class/leds/led:torch_0/max_brightness
+    chown system system /sys/class/leds/led:torch_1/max_brightness
 
 #Load WLAN driver
     chown wifi wifi /sys/module/wlan/parameters/fwpath
