@@ -188,20 +188,26 @@ on boot
     chmod 0660 /sys/devices/virtual/timed_output/vibrator/vtg_level
 
     # KCal
-    chown system system /sys/devices/platform/kcal_ctrl.0/kcal_cont
-    chown system system /sys/devices/platform/kcal_ctrl.0/kcal_enable
-    chown system system /sys/devices/platform/kcal_ctrl.0/kcal_hue
-    chown system system /sys/devices/platform/kcal_ctrl.0/kcal_sat
-    chown system system /sys/devices/platform/kcal_ctrl.0/kcal_val
-    chown system system /sys/devices/platform/kcal_ctrl.0/kcal_min
-    chown system system /sys/devices/platform/kcal_ctrl.0/kcal
-    chmod 660 /sys/devices/platform/kcal_ctrl.0/kcal_cont
-    chmod 660 /sys/devices/platform/kcal_ctrl.0/kcal_enable
-    chmod 660 /sys/devices/platform/kcal_ctrl.0/kcal_hue
-    chmod 660 /sys/devices/platform/kcal_ctrl.0/kcal_sat
-    chmod 660 /sys/devices/platform/kcal_ctrl.0/kcal_val
-    chmod 660 /sys/devices/platform/kcal_ctrl.0/kcal_min
-    chmod 660 /sys/devices/platform/kcal_ctrl.0/kcal
+    chown system system /sys/module/msm_drm/parameters/kcal_cont
+    chown system system /sys/module/msm_drm/parameters/kcal_enable
+    chown system system /sys/module/msm_drm/parameters/kcal_hue
+    chown system system /sys/module/msm_drm/parameters/kcal_sat
+    chown system system /sys/module/msm_drm/parameters/kcal_val
+    chown system system /sys/module/msm_drm/parameters/kcal_min
+    chown system system /sys/module/msm_drm/parameters/kcal
+    chown system system /sys/module/msm_drm/parameters/kcal_red
+    chown system system /sys/module/msm_drm/parameters/kcal_green
+    chown system system /sys/module/msm_drm/parameters/kcal_blue
+    chmod 660 /sys/module/msm_drm/parameters/kcal_cont
+    chmod 660 /sys/module/msm_drm/parameters/kcal_enable
+    chmod 660 /sys/module/msm_drm/parameters/kcal_hue
+    chmod 660 /sys/module/msm_drm/parameters/kcal_sat
+    chmod 660 /sys/module/msm_drm/parameters/kcal_val
+    chmod 660 /sys/module/msm_drm/parameters/kcal_min
+    chmod 660 /sys/module/msm_drm/parameters/kcal
+    chmod 660 /sys/module/msm_drm/parameters/kcal_red
+    chmod 660 /sys/module/msm_drm/parameters/kcal_blue
+    chmod 660 /sys/module/msm_drm/parameters/kcal_green
 
     # Audio gain permissions
     chown system system /sys/kernel/sound_control/headphone_gain
