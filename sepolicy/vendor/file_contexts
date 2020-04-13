@@ -25,7 +25,6 @@
 
 # Kcal
 /sys/module/msm_drm/parameters(/.*)?                      u:object_r:kcal_dev:s0
-/sys/module/msm_drm/parameters(/.*)?                    u:object_r:kcal_dev:s0
 
 # HW Info
 /sys/devices/platform/HardwareInfo(/.*)? u:object_r:sysfs_info:s0
