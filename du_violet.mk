@@ -24,9 +24,6 @@ $(call inherit-product, vendor/du/config/common_full_phone.mk)
 IS_PHONE:= true
 DU_BUILD_TYPE := OFFICIAL
 
-#Gapps
-USE_GAPPS := true
-
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := du_violet
 PRODUCT_DEVICE := violet
