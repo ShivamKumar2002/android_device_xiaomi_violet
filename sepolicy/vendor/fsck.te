@@ -1,2 +1,0 @@
-allow fsck fsck:capability { dac_override  dac_read_search };
-allow fsck mnt_vendor_file:dir { search };
