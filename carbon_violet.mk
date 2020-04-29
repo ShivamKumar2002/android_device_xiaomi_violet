@@ -13,21 +13,14 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 # Inherit from violet device
 $(call inherit-product, device/xiaomi/violet/device.mk)
 
-# Inherit some common RevengeOS stuff.
+# Inherit some common Carbon stuff.
 TARGET_BOOT_ANIMATION_RES := 1080
-TARGET_GAPPS_ARCH := arm64
 TARGET_INCLUDE_WIFI_EXT := true
-TARGET_INCLUDE_STOCK_ARCORE := true
-TARGET_INCREMENTAL_BLOCK_BASED := true
-TARGET_SUPPORTS_GOOGLE_RECORDER := true
-$(call inherit-product, vendor/revengeos/config/common.mk)
+$(call inherit-product, vendor/carbon/config/common.mk)
 IS_PHONE:= true
 
-# PixelGApps
-$(call inherit-product-if-exists, vendor/pixelgapps/pixel-gapps.mk)
-
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := revengeos_violet
+PRODUCT_NAME := carbon_violet
 PRODUCT_DEVICE := violet
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi Note 7 Pro
